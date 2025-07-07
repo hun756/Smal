@@ -1,0 +1,14 @@
+@PACKAGE_INIT@
+
+include(CMakeFindDependencyMacro)
+
+# Check if the targets are already imported
+if(NOT TARGET SmallDataStructures::small_data_structures)
+    include("${CMAKE_CURRENT_LIST_DIR}/SmallDataStructuresTargets.cmake")
+endif()
+
+# Set the variables that the user can use
+set(SmallDataStructures_LIBRARIES SmallDataStructures::small_data_structures)
+set(SmallDataStructures_INCLUDE_DIRS "@PACKAGE_CMAKE_INSTALL_INCLUDEDIR@")
+
+check_required_components(SmallDataStructures)
