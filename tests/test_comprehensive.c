@@ -14,7 +14,7 @@
         } \
     } while(0)
 
-void test_edge_cases() {
+void test_edge_cases(void) {
     printf("Testing edge cases...\n");
     
     int* vec = NULL;
@@ -28,7 +28,7 @@ void test_edge_cases() {
     vec_free(vec);
 }
 
-void test_memory_management() {
+void test_memory_management(void) {
     printf("Testing memory management...\n");
     
     for (int iter = 0; iter < 10; iter++) {
@@ -43,7 +43,7 @@ void test_memory_management() {
     }
 }
 
-void test_different_sizes() {
+void test_different_sizes(void) {
     printf("Testing different data sizes...\n");
     
     char* char_vec = NULL;
@@ -62,7 +62,7 @@ void test_different_sizes() {
     vec_free(ll_vec);
 }
 
-void test_capacity_doubling() {
+void test_capacity_doubling(void) {
     printf("Testing capacity doubling strategy...\n");
     
     int* vec = NULL;
@@ -83,7 +83,7 @@ void test_capacity_doubling() {
     vec_free(vec);
 }
 
-int main() {
+int main(void) {
     printf("Running Comprehensive Small Vector Tests...\n");
     
     test_edge_cases();

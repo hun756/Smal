@@ -22,7 +22,7 @@ void string_free(String* s) {
     s->len = 0;
 }
 
-int main() {
+int main(void) {
     printf("Small Vector - String Processing Example\n");
     printf("=======================================\n\n");
     

@@ -6,7 +6,7 @@
 
 #define BENCHMARK_ITERATIONS 1000000
 
-void benchmark_push_operations() {
+void benchmark_push_operations(void) {
     printf("Benchmarking push operations...\n");
     
     clock_t start = clock();
@@ -27,7 +27,7 @@ void benchmark_push_operations() {
     vec_free(vec);
 }
 
-void benchmark_access_operations() {
+void benchmark_access_operations(void) {
     printf("Benchmarking access operations...\n");
     
     int* vec = NULL;
@@ -54,7 +54,7 @@ void benchmark_access_operations() {
     vec_free(vec);
 }
 
-void benchmark_memory_usage() {
+void benchmark_memory_usage(void) {
     printf("Benchmarking memory usage patterns...\n");
     
     int* vec = NULL;
@@ -82,7 +82,7 @@ void benchmark_memory_usage() {
     vec_free(vec);
 }
 
-int main() {
+int main(void) {
     printf("Running Performance Tests...\n");
     
     benchmark_push_operations();

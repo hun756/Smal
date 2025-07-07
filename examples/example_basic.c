@@ -1,7 +1,7 @@
 #include "../include/small_vec.h"
 #include <stdio.h>
 
-int main() {
+int main(void) {
     printf("Small Vector - Basic Example\n");
     printf("============================\n\n");
     

@@ -44,7 +44,7 @@ void benchmark_size(const char* name, size_t size) {
     printf("\n");
 }
 
-int main() {
+int main(void) {
     printf("Performance Benchmark Suite\n");
     printf("===========================\n\n");
     

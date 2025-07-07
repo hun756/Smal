@@ -23,7 +23,7 @@ double distance_3d(Point3D a, Point3D b) {
     return sqrt(dx * dx + dy * dy + dz * dz);
 }
 
-int main() {
+int main(void) {
     printf("Small Vector - Mathematical Operations Example\n");
     printf("=============================================\n\n");
     

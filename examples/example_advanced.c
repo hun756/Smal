@@ -12,7 +12,7 @@ void print_datapoint(const DataPoint* dp) {
     printf("ID: %d, Value: %.2f, Name: %s\n", dp->id, dp->value, dp->name);
 }
 
-int main() {
+int main(void) {
     printf("Small Vector - Advanced Example with Structs\n");
     printf("============================================\n\n");
     
