@@ -22,7 +22,7 @@ typedef struct BufHdr {
 #define vec_capacity(b) ((b)? buf__hdr(b)->capacity : 0)
 
 #define vec_push(b, x) ((vec_fit(b, 1), b[vec_length(b)] = (x), buf__hdr(b)->length++)
-#define vec_free(b) ((b) ? (free(buf__hdr(b)), (b) = NULL) : (void)0)
+#define vec_free(b) do { if (b) { free(buf__hdr(b)); (b) = NULL; } } while (0)
 
 
 extern inline void* vec_grow(const void* buf, size_t new_len, size_t elem_size) {
