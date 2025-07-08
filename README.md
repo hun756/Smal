@@ -1,4 +1,4 @@
-# SmallDataStructures
+# Smal
 
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/yourusername/SmallDataStructures)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
